@@ -2,19 +2,19 @@
 #include<conio.h>
 int main(void)
 {
-	int sthr,stmin,sphr,spmin;
+	int sthra,stmin,sphr,spmin;
 	int time,tmhr,tmmin;
-	scanf("%d",&sthr);
+	scanf("%d",&sthra);
 	scanf("%d",&stmin);
 	scanf("%d",&sphr);
 	scanf("%d",&spmin);
-	printf("\nstarting time=%d hr:%d min",sthr,stmin);
+	printf("\nstarting time=%d hr:%d min",sthra,stmin);
 	printf("\nstop time=%d hr:%d min",sphr,spmin);
 	if(sphr<sthr)
 	{
 		sphr=sphr+12;
 	}
-	sthr=sthr*60+stmin;
+	sthra=sthra*60+stmin;
 	sphr=sphr*60+spmin;
 	time=sphr-sthr;
 	if(time<60)
